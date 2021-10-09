@@ -246,6 +246,12 @@ div {
   font-size: 1rem;
 }
 
+@media (min-width: 900px) {
+  .row-cols-md-4 > * {
+    width: 21.5%;
+  }
+}
+
 .carousel .carousel-inner .carousel-item {
   width: 100%;
   padding-bottom: 50px;
