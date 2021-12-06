@@ -10,7 +10,6 @@ window.onscroll = function () {
 
 let sellProperty = [];
 propertyContents = document.getElementById("propertyContentsRow");
-// const propertyModal = document.querySelector(".property__modal__body");
 
 const addCard = () => {
   const newPropertyDetails = {
@@ -32,12 +31,6 @@ const addCard = () => {
   saveToLocalStorage();
 };
 
-{
-  /* <h4 class="detail bord"> ${text}</h4> */
-}
-{
-  /* <h4 class="detail bord"> ${text}</h4> */
-}
 
 const generatePropertyCard = ({ id, url, text, title, address }) => {
   return `<div class="col-md-3 mb-5" id=${id} key=${id}>
@@ -79,12 +72,6 @@ const reloadPropertyCard = () => {
   });
 };
 
-// const openReview = (e) => {
-//   const targetID = e.getAttribute("name");
-
-//   const getReview = sellProperty.filter(({ id }) => id === targetID);
-//   propertyModal.innerHTML = htmlModalContent(getReview[0]);
-// };
 
 const deleteProperty = (e) => {
   const targetID = e.getAttribute("name");
@@ -160,8 +147,5 @@ const saveEditProperty = (e) => {
   cardTitle.setAttribute("contenteditable", "false");
   cardAddress.setAttribute("contenteditable", "false");
   submitButton.setAttribute("onclick", "saveEditProperty(this)");
-  // submitButton.setAttribute("onclick", "openReview(this)");
-  // submitButton.setAttribute("data-bs-toggle", "modal");
-  // submitButton.setAttribute("data-bs-target", "#showTask");
-  // submitButton.innerHTML = "Save";
+ 
 };
